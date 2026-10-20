@@ -1,0 +1,338 @@
+solid drone_gimbal_arm
+  facet normal 0.0000 0.0000 1.0000
+    outer loop
+      vertex -12.000 -12.000 0.000
+      vertex 12.000 -12.000 0.000
+      vertex 12.000 12.000 0.000
+    endloop
+  endfacet
+  facet normal 0.0000 0.0000 1.0000
+    outer loop
+      vertex -12.000 -12.000 0.000
+      vertex 12.000 12.000 0.000
+      vertex -12.000 12.000 0.000
+    endloop
+  endfacet
+  facet normal 0.0000 0.0000 -1.0000
+    outer loop
+      vertex -12.000 -12.000 6.000
+      vertex -12.000 12.000 6.000
+      vertex 12.000 12.000 6.000
+    endloop
+  endfacet
+  facet normal 0.0000 0.0000 -1.0000
+    outer loop
+      vertex -12.000 -12.000 6.000
+      vertex 12.000 12.000 6.000
+      vertex 12.000 -12.000 6.000
+    endloop
+  endfacet
+  facet normal 0.0000 -1.0000 0.0000
+    outer loop
+      vertex -12.000 -12.000 0.000
+      vertex 12.000 -12.000 0.000
+      vertex 12.000 -12.000 6.000
+    endloop
+  endfacet
+  facet normal 0.0000 -1.0000 0.0000
+    outer loop
+      vertex -12.000 -12.000 0.000
+      vertex 12.000 -12.000 6.000
+      vertex -12.000 -12.000 6.000
+    endloop
+  endfacet
+  facet normal 0.0000 1.0000 0.0000
+    outer loop
+      vertex -12.000 12.000 0.000
+      vertex -12.000 12.000 6.000
+      vertex 12.000 12.000 6.000
+    endloop
+  endfacet
+  facet normal 0.0000 1.0000 0.0000
+    outer loop
+      vertex -12.000 12.000 0.000
+      vertex 12.000 12.000 6.000
+      vertex 12.000 12.000 0.000
+    endloop
+  endfacet
+  facet normal -1.0000 0.0000 0.0000
+    outer loop
+      vertex -12.000 -12.000 0.000
+      vertex -12.000 -12.000 6.000
+      vertex -12.000 12.000 6.000
+    endloop
+  endfacet
+  facet normal -1.0000 0.0000 0.0000
+    outer loop
+      vertex -12.000 -12.000 0.000
+      vertex -12.000 12.000 6.000
+      vertex -12.000 12.000 0.000
+    endloop
+  endfacet
+  facet normal 1.0000 0.0000 0.0000
+    outer loop
+      vertex 12.000 -12.000 0.000
+      vertex 12.000 12.000 0.000
+      vertex 12.000 12.000 6.000
+    endloop
+  endfacet
+  facet normal 1.0000 0.0000 0.0000
+    outer loop
+      vertex 12.000 -12.000 0.000
+      vertex 12.000 12.000 6.000
+      vertex 12.000 -12.000 6.000
+    endloop
+  endfacet
+  facet normal 0.0000 0.0000 1.0000
+    outer loop
+      vertex 7.000 -6.000 6.000
+      vertex 13.000 -6.000 6.000
+      vertex 13.000 6.000 6.000
+    endloop
+  endfacet
+  facet normal 0.0000 0.0000 1.0000
+    outer loop
+      vertex 7.000 -6.000 6.000
+      vertex 13.000 6.000 6.000
+      vertex 7.000 6.000 6.000
+    endloop
+  endfacet
+  facet normal 0.0000 0.0000 -1.0000
+    outer loop
+      vertex 7.000 -6.000 30.000
+      vertex 7.000 6.000 30.000
+      vertex 13.000 6.000 30.000
+    endloop
+  endfacet
+  facet normal 0.0000 0.0000 -1.0000
+    outer loop
+      vertex 7.000 -6.000 30.000
+      vertex 13.000 6.000 30.000
+      vertex 13.000 -6.000 30.000
+    endloop
+  endfacet
+  facet normal 0.0000 -1.0000 0.0000
+    outer loop
+      vertex 7.000 -6.000 6.000
+      vertex 13.000 -6.000 6.000
+      vertex 13.000 -6.000 30.000
+    endloop
+  endfacet
+  facet normal 0.0000 -1.0000 0.0000
+    outer loop
+      vertex 7.000 -6.000 6.000
+      vertex 13.000 -6.000 30.000
+      vertex 7.000 -6.000 30.000
+    endloop
+  endfacet
+  facet normal 0.0000 1.0000 0.0000
+    outer loop
+      vertex 7.000 6.000 6.000
+      vertex 7.000 6.000 30.000
+      vertex 13.000 6.000 30.000
+    endloop
+  endfacet
+  facet normal 0.0000 1.0000 0.0000
+    outer loop
+      vertex 7.000 6.000 6.000
+      vertex 13.000 6.000 30.000
+      vertex 13.000 6.000 6.000
+    endloop
+  endfacet
+  facet normal -1.0000 0.0000 0.0000
+    outer loop
+      vertex 7.000 -6.000 6.000
+      vertex 7.000 -6.000 30.000
+      vertex 7.000 6.000 30.000
+    endloop
+  endfacet
+  facet normal -1.0000 0.0000 0.0000
+    outer loop
+      vertex 7.000 -6.000 6.000
+      vertex 7.000 6.000 30.000
+      vertex 7.000 6.000 6.000
+    endloop
+  endfacet
+  facet normal 1.0000 0.0000 0.0000
+    outer loop
+      vertex 13.000 -6.000 6.000
+      vertex 13.000 6.000 6.000
+      vertex 13.000 6.000 30.000
+    endloop
+  endfacet
+  facet normal 1.0000 0.0000 0.0000
+    outer loop
+      vertex 13.000 -6.000 6.000
+      vertex 13.000 6.000 30.000
+      vertex 13.000 -6.000 30.000
+    endloop
+  endfacet
+  facet normal 0.0000 0.0000 1.0000
+    outer loop
+      vertex -13.000 -6.000 27.000
+      vertex 13.000 -6.000 27.000
+      vertex 13.000 6.000 27.000
+    endloop
+  endfacet
+  facet normal 0.0000 0.0000 1.0000
+    outer loop
+      vertex -13.000 -6.000 27.000
+      vertex 13.000 6.000 27.000
+      vertex -13.000 6.000 27.000
+    endloop
+  endfacet
+  facet normal 0.0000 0.0000 -1.0000
+    outer loop
+      vertex -13.000 -6.000 33.000
+      vertex -13.000 6.000 33.000
+      vertex 13.000 6.000 33.000
+    endloop
+  endfacet
+  facet normal 0.0000 0.0000 -1.0000
+    outer loop
+      vertex -13.000 -6.000 33.000
+      vertex 13.000 6.000 33.000
+      vertex 13.000 -6.000 33.000
+    endloop
+  endfacet
+  facet normal 0.0000 -1.0000 0.0000
+    outer loop
+      vertex -13.000 -6.000 27.000
+      vertex 13.000 -6.000 27.000
+      vertex 13.000 -6.000 33.000
+    endloop
+  endfacet
+  facet normal 0.0000 -1.0000 0.0000
+    outer loop
+      vertex -13.000 -6.000 27.000
+      vertex 13.000 -6.000 33.000
+      vertex -13.000 -6.000 33.000
+    endloop
+  endfacet
+  facet normal 0.0000 1.0000 0.0000
+    outer loop
+      vertex -13.000 6.000 27.000
+      vertex -13.000 6.000 33.000
+      vertex 13.000 6.000 33.000
+    endloop
+  endfacet
+  facet normal 0.0000 1.0000 0.0000
+    outer loop
+      vertex -13.000 6.000 27.000
+      vertex 13.000 6.000 33.000
+      vertex 13.000 6.000 27.000
+    endloop
+  endfacet
+  facet normal -1.0000 0.0000 0.0000
+    outer loop
+      vertex -13.000 -6.000 27.000
+      vertex -13.000 -6.000 33.000
+      vertex -13.000 6.000 33.000
+    endloop
+  endfacet
+  facet normal -1.0000 0.0000 0.0000
+    outer loop
+      vertex -13.000 -6.000 27.000
+      vertex -13.000 6.000 33.000
+      vertex -13.000 6.000 27.000
+    endloop
+  endfacet
+  facet normal 1.0000 0.0000 0.0000
+    outer loop
+      vertex 13.000 -6.000 27.000
+      vertex 13.000 6.000 27.000
+      vertex 13.000 6.000 33.000
+    endloop
+  endfacet
+  facet normal 1.0000 0.0000 0.0000
+    outer loop
+      vertex 13.000 -6.000 27.000
+      vertex 13.000 6.000 33.000
+      vertex 13.000 -6.000 33.000
+    endloop
+  endfacet
+  facet normal 0.0000 0.0000 1.0000
+    outer loop
+      vertex -14.000 -9.000 33.000
+      vertex -6.000 -9.000 33.000
+      vertex -6.000 9.000 33.000
+    endloop
+  endfacet
+  facet normal 0.0000 0.0000 1.0000
+    outer loop
+      vertex -14.000 -9.000 33.000
+      vertex -6.000 9.000 33.000
+      vertex -14.000 9.000 33.000
+    endloop
+  endfacet
+  facet normal 0.0000 0.0000 -1.0000
+    outer loop
+      vertex -14.000 -9.000 37.000
+      vertex -14.000 9.000 37.000
+      vertex -6.000 9.000 37.000
+    endloop
+  endfacet
+  facet normal 0.0000 0.0000 -1.0000
+    outer loop
+      vertex -14.000 -9.000 37.000
+      vertex -6.000 9.000 37.000
+      vertex -6.000 -9.000 37.000
+    endloop
+  endfacet
+  facet normal 0.0000 -1.0000 0.0000
+    outer loop
+      vertex -14.000 -9.000 33.000
+      vertex -6.000 -9.000 33.000
+      vertex -6.000 -9.000 37.000
+    endloop
+  endfacet
+  facet normal 0.0000 -1.0000 0.0000
+    outer loop
+      vertex -14.000 -9.000 33.000
+      vertex -6.000 -9.000 37.000
+      vertex -14.000 -9.000 37.000
+    endloop
+  endfacet
+  facet normal 0.0000 1.0000 0.0000
+    outer loop
+      vertex -14.000 9.000 33.000
+      vertex -14.000 9.000 37.000
+      vertex -6.000 9.000 37.000
+    endloop
+  endfacet
+  facet normal 0.0000 1.0000 0.0000
+    outer loop
+      vertex -14.000 9.000 33.000
+      vertex -6.000 9.000 37.000
+      vertex -6.000 9.000 33.000
+    endloop
+  endfacet
+  facet normal -1.0000 0.0000 0.0000
+    outer loop
+      vertex -14.000 -9.000 33.000
+      vertex -14.000 -9.000 37.000
+      vertex -14.000 9.000 37.000
+    endloop
+  endfacet
+  facet normal -1.0000 0.0000 0.0000
+    outer loop
+      vertex -14.000 -9.000 33.000
+      vertex -14.000 9.000 37.000
+      vertex -14.000 9.000 33.000
+    endloop
+  endfacet
+  facet normal 1.0000 0.0000 0.0000
+    outer loop
+      vertex -6.000 -9.000 33.000
+      vertex -6.000 9.000 33.000
+      vertex -6.000 9.000 37.000
+    endloop
+  endfacet
+  facet normal 1.0000 0.0000 0.0000
+    outer loop
+      vertex -6.000 -9.000 33.000
+      vertex -6.000 9.000 37.000
+      vertex -6.000 -9.000 37.000
+    endloop
+  endfacet
+endsolid drone_gimbal_arm
