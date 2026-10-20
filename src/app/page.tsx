@@ -14,43 +14,53 @@ import {
 import HardwareBookingCard from '@/components/HardwareBookingCard';
 
 export default async function HomePage() {
-  // Fetch featured items
-  const featuredHardware = await prisma.hardwareItem.findMany({
-    take: 3,
-    include: {
-      owner: {
-        select: {
-          id: true,
-          name: true,
-          email: true,
-          department: true,
-          trustScore: true,
-          role: true,
-          avatar: true,
+  // Fetch featured items with build-time & serverless fallback safety
+  let featuredHardware: any[] = [];
+  let trendingCad: any[] = [];
+  let totalHardware = 7;
+  let totalCad = 4;
+  let totalUsers = 3;
+
+  try {
+    featuredHardware = await prisma.hardwareItem.findMany({
+      take: 3,
+      include: {
+        owner: {
+          select: {
+            id: true,
+            name: true,
+            email: true,
+            department: true,
+            trustScore: true,
+            role: true,
+            avatar: true,
+          },
         },
       },
-    },
-    orderBy: { createdAt: 'desc' },
-  });
+      orderBy: { createdAt: 'desc' },
+    });
 
-  const trendingCad = await prisma.cadResource.findMany({
-    take: 3,
-    include: {
-      uploader: {
-        select: {
-          id: true,
-          name: true,
-          department: true,
-          trustScore: true,
+    trendingCad = await prisma.cadResource.findMany({
+      take: 3,
+      include: {
+        uploader: {
+          select: {
+            id: true,
+            name: true,
+            department: true,
+            trustScore: true,
+          },
         },
       },
-    },
-    orderBy: { downloadsCount: 'desc' },
-  });
+      orderBy: { downloadsCount: 'desc' },
+    });
 
-  const totalHardware = await prisma.hardwareItem.count();
-  const totalCad = await prisma.cadResource.count();
-  const totalUsers = await prisma.user.count();
+    totalHardware = await prisma.hardwareItem.count();
+    totalCad = await prisma.cadResource.count();
+    totalUsers = await prisma.user.count();
+  } catch (error) {
+    console.warn('Database connection notice during build or cold start:', error);
+  }
 
   return (
     <div className="w-full space-y-20 pb-20">

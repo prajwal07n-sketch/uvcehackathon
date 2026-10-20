@@ -13,23 +13,28 @@ export default async function CadDetailPage(props: { params: Promise<{ id: strin
   const params = await props.params;
   const { id } = params;
 
-  const resource = await prisma.cadResource.findUnique({
-    where: { id },
-    include: {
-      uploader: {
-        select: {
-          id: true,
-          name: true,
-          email: true,
-          usn: true,
-          department: true,
-          trustScore: true,
-          role: true,
-          avatar: true,
+  let resource: any = null;
+  try {
+    resource = await prisma.cadResource.findUnique({
+      where: { id },
+      include: {
+        uploader: {
+          select: {
+            id: true,
+            name: true,
+            email: true,
+            usn: true,
+            department: true,
+            trustScore: true,
+            role: true,
+            avatar: true,
+          },
         },
       },
-    },
-  });
+    });
+  } catch (err) {
+    console.warn(`CAD resource lookup notice for ${id}:`, err);
+  }
 
   if (!resource) {
     notFound();

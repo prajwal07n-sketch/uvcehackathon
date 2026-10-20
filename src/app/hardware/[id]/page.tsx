@@ -12,32 +12,37 @@ export default async function HardwareDetailPage(props: { params: Promise<{ id: 
   const params = await props.params;
   const { id } = params;
 
-  const item = await prisma.hardwareItem.findUnique({
-    where: { id },
-    include: {
-      owner: {
-        select: {
-          id: true,
-          name: true,
-          email: true,
-          usn: true,
-          department: true,
-          trustScore: true,
-          role: true,
-          avatar: true,
+  let item: any = null;
+  try {
+    item = await prisma.hardwareItem.findUnique({
+      where: { id },
+      include: {
+        owner: {
+          select: {
+            id: true,
+            name: true,
+            email: true,
+            usn: true,
+            department: true,
+            trustScore: true,
+            role: true,
+            avatar: true,
+          },
+        },
+        transactions: {
+          where: { status: { in: ['APPROVED', 'CHECKED_OUT'] } },
+          select: {
+            id: true,
+            startDate: true,
+            endDate: true,
+            status: true,
+          },
         },
       },
-      transactions: {
-        where: { status: { in: ['APPROVED', 'CHECKED_OUT'] } },
-        select: {
-          id: true,
-          startDate: true,
-          endDate: true,
-          status: true,
-        },
-      },
-    },
-  });
+    });
+  } catch (err) {
+    console.warn(`Hardware lookup notice for ${id}:`, err);
+  }
 
   if (!item) {
     notFound();

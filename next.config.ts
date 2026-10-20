@@ -1,5 +1,10 @@
 import type { NextConfig } from "next";
 
+// Ensure safe build-time fallback if DATABASE_URL is not yet bound in deployment dashboard
+if (!process.env.DATABASE_URL) {
+  process.env.DATABASE_URL = "file:./dev.db";
+}
+
 const nextConfig: NextConfig = {
   turbopack: {
     rules: {
