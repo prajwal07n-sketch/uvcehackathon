@@ -23,6 +23,7 @@ export function isValidUSN(usn: string): boolean {
 }
 
 export const authOptions: NextAuthOptions = {
+  secret: process.env.NEXTAUTH_SECRET || 'campus-share-jwt-hackathon-2026-secret-uvce',
   adapter: PrismaAdapter(prisma) as any,
   session: {
     strategy: 'jwt',

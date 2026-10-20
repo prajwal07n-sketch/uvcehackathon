@@ -1,8 +1,7 @@
 import { PrismaClient } from '@prisma/client';
+import { getDatabaseUrl } from './sqlite-init';
 
-if (!process.env.DATABASE_URL) {
-  process.env.DATABASE_URL = 'file:./dev.db';
-}
+const resolvedUrl = getDatabaseUrl();
 
 const globalForPrisma = globalThis as unknown as {
   prisma: PrismaClient | undefined;
@@ -11,6 +10,11 @@ const globalForPrisma = globalThis as unknown as {
 export const prisma =
   globalForPrisma.prisma ??
   new PrismaClient({
+    datasources: {
+      db: {
+        url: resolvedUrl,
+      },
+    },
     log: process.env.NODE_ENV === 'development' ? ['error'] : ['error'],
   });
 
